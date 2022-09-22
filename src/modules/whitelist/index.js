@@ -20,10 +20,10 @@ const updateRemainingWhitelist = (bot) => {
       let count = remainigModel.count;
       if (message.channelId === process.env.DISCORD_GOLD_CHANNEL_ID) {
         if (type === 1) {
-          count += 10;
+          count += 1;
         }
         if (type === 0) {
-          count -= 10;
+          count -= 1;
         }
       }
       if (message.channelId === process.env.DISCORD_SILVER_CHANNEL_ID) {
